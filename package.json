@@ -1,9 +1,24 @@
 {
-  "name": "my-monorepo",
-  "version": "0.0.1",
-  "description": "Monorepo Poject",
-  "main": "index.js",
-  "author": "jferlao",
-  "license": "MIT",
-  "private":"true"
+  "name": "my-monorepo-project",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "add": "lerna add",
+    "create": "lerna create",
+    "bootstrap": "lerna bootstrap",
+    "list":"lerna list",
+    "test":"lerna test",
+    "clean":"lerna clean && rm -rf node_modules",
+    "clean:build": "lerna run clean",
+    "changed":"lerna run changed"
+  },
+  "workspaces": {
+    "packages": [
+      "components",
+      "utils/*",
+      "tools/*"
+    ]
+  }
 }

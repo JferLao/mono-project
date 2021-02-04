@@ -1,0 +1,15 @@
+{
+  "packages": ["components/*", "utils/*", "tools/*"],
+  "version": "0.0.0",
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "commend": {
+    "version": {
+      "allowBranch": ["master", "develop"]
+    },
+    "bootstrap": {
+      "ignore": ["tools/*", "utils/*"],
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  }
+}
