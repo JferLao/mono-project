@@ -1,0 +1,9 @@
+{
+  "name": "my-monorepo",
+  "version": "0.0.1",
+  "description": "Monorepo Poject",
+  "main": "index.js",
+  "author": "jferlao",
+  "license": "MIT",
+  "private":"true"
+}
